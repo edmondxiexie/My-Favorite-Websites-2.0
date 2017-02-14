@@ -128,22 +128,22 @@ public class Controller extends HttpServlet {
 
             UserBean user = new UserBean();
 
-            user.setEmail("001@gmail.com");
+            user.setEmail("jiayixie@gmail.com");
             user.setFirstName("Jiayi");
             user.setLastName("Xie");
-            user.setPassword("123456");
+            user.setPassword("000000");
             userDAO.create(user);
 
-            user.setEmail("002@gmail.com");
+            user.setEmail("donaldtrump@gmail.com");
             user.setFirstName("Donald");
             user.setLastName("Trump");
-            user.setPassword("123456");
+            user.setPassword("000000");
             userDAO.create(user);
 
-            user.setEmail("003@gmail.com");
+            user.setEmail("barackobama@gmail.com");
             user.setFirstName("Barack");
             user.setLastName("Obama");
-            user.setPassword("123456");
+            user.setPassword("000000");
             userDAO.create(user);
 
             List<UserBean> users = new ArrayList<UserBean>();
@@ -153,29 +153,17 @@ public class Controller extends HttpServlet {
             favorites.add(new FavoriteBean(users.get(0).getId(),
                     "http://www.cmu.edu", "Carnegie Mellon University."));
             favorites.add(new FavoriteBean(users.get(0).getId(),
-                    "http://www.president.com", "A website about president"));
-            favorites.add(new FavoriteBean(users.get(0).getId(),
-                    "http://www.google.com", "Hello Google"));
-            favorites.add(new FavoriteBean(users.get(0).getId(),
-                    "https://www.yuotube.gov", "Watch some video."));
+                    "http://www.edmondbay.com", "My own website"));
             
             favorites.add(new FavoriteBean(users.get(1).getId(),
                     "https://www.facebook.com", "Facebook."));
             favorites.add(new FavoriteBean(users.get(1).getId(),
                     "http://ustoday.com", "News."));
-            favorites.add(new FavoriteBean(users.get(1).getId(),
-                    "http://www.cmu.edu", "Carnegie Mellon University."));
-            favorites.add(new FavoriteBean(users.get(1).getId(),
-                    "http://www.linkedin.com", "Linkedin."));
             
             favorites.add(new FavoriteBean(users.get(2).getId(),
-                    "http://www.apple.com", "Want a new laptop"));
+                    "http://www.president.com", "A website about president"));
             favorites.add(new FavoriteBean(users.get(2).getId(),
-                    "http://www.edmondbay.com", "My own website"));
-            favorites.add(new FavoriteBean(users.get(2).getId(),
-                    "http://www.yahoo.com", "Hello Yahoo!"));
-            favorites.add(new FavoriteBean(users.get(2).getId(),
-                    "http://www.google.com", "Hello Google!"));
+                    "http://www.twitter.com", "Twitter. It's what's happening."));
 
             for (FavoriteBean item : favorites) {
                 favoriteDAO.create(item);
