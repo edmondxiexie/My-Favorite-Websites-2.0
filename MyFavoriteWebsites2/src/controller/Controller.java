@@ -150,19 +150,19 @@ public class Controller extends HttpServlet {
             List<FavoriteBean> favorites = new ArrayList<FavoriteBean>();
             users = userDAO.getUsers();
 
-            favorites.add(new FavoriteBean(users.get(0).getId(),
+            favorites.add(new FavoriteBean(users.get(2).getId(),
                     "http://www.cmu.edu", "Carnegie Mellon University."));
-            favorites.add(new FavoriteBean(users.get(0).getId(),
+            favorites.add(new FavoriteBean(users.get(2).getId(),
                     "http://www.edmondbay.com", "My own website"));
             
-            favorites.add(new FavoriteBean(users.get(1).getId(),
+            favorites.add(new FavoriteBean(users.get(0).getId(),
                     "https://www.facebook.com", "Facebook."));
-            favorites.add(new FavoriteBean(users.get(1).getId(),
-                    "http://ustoday.com", "News."));
+            favorites.add(new FavoriteBean(users.get(0).getId(),
+                    "http://www.usatoday.com", "News."));
             
-            favorites.add(new FavoriteBean(users.get(2).getId(),
-                    "http://www.president.com", "A website about president"));
-            favorites.add(new FavoriteBean(users.get(2).getId(),
+            favorites.add(new FavoriteBean(users.get(1).getId(),
+                    "http://www.whitehouse.gov", "A website about white house"));
+            favorites.add(new FavoriteBean(users.get(1).getId(),
                     "http://www.twitter.com", "Twitter. It's what's happening."));
 
             for (FavoriteBean item : favorites) {
