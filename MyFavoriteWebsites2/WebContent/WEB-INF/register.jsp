@@ -1,4 +1,4 @@
-<jsp:include page="template.jsp" />
+<jsp:include page="page-content.jsp" />
 
 <p class="list-item">
     Enter the following information.
@@ -38,3 +38,4 @@
 	</form>
 </p>
 
+<jsp:include page="page-bottom.jsp" />

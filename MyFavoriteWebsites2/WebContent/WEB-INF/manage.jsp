@@ -1,5 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<jsp:include page="template.jsp" />
+<jsp:include page="page-content.jsp" />
 
 <p class="list-item">Manage Your Favorites</p>
 
@@ -44,10 +44,10 @@ No favorite items.
 					<tr>
 				</c:otherwise>
 			</c:choose>
-			<td width="30%"><a href="url.do?id=${fav.id}"
+			<td width="28%"><a href="url.do?id=${fav.id}"
 				title="id=${fav.id}, user=${fav.userId}">${fav.getURL()}</a></td>
 			<td width="60%">${fav.getComment()}</td>
-			<td width="10%">${fav.getClickCount()}&nbsp;Clicks</td>
+			<td width="12%">${fav.getClickCount()}&nbsp;Clicks</td>
 			<td width="10px"><a href="delete.do?id=${fav.id}"
 				title="delete item">delete</a></td>
 			</tr>

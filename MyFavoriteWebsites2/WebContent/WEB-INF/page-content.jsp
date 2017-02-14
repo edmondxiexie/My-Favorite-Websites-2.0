@@ -10,6 +10,22 @@
 <title>favorite Websites</title>
 <style>
 
+a:link {
+	color: #4d4d4d;
+}
+
+a:visited {
+	color: #4d4d4d;
+}
+
+a:hover {
+	color: #ff0080;
+}
+
+a:active {
+	color: #4d4d4d;
+}
+
 .menu-head {
 	font-size: 15pt;
 	font-weight: bold;
@@ -24,12 +40,15 @@
 }
 
 #header {
+	background-color: #333333;
+	color: white;
 	text-align: left;
 	padding: 5px;
 }
 
 #navigator {
 	line-height: 30px;
+	background-color: #eeeeee;
 	height: 100%;
 	width: 150px;
 	float: left;
@@ -42,12 +61,20 @@
 	width: 80%
 }
 
+#footer {
+	background-color: #333333;
+	color: white;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+}
+
 </style>
 </head>
 <body>
 	<div id="header">
 		<h1>
-			<a style="color: black; text-decoration: none" href="welcome.do"
+			<a style="color: white; text-decoration: none" href="welcome.do"
 				title="favorites.com">Favorite Websites</a>
 		</h1>
 	</div>
@@ -55,7 +82,7 @@
 	<div id="navigator">
 		<div>
 			<table style="width: 100%">
-				<!-- unlogged-in manage panel -->
+				<!-- unlogged -->
 				<c:choose>
 					<c:when test="${user == null}">
 						<tr>

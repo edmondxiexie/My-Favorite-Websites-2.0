@@ -1,6 +1,6 @@
-<jsp:include page="template.jsp" />
+<jsp:include page="page-content.jsp" />
 
-<p class="list-item">Enter your new password</p>
+<p class="list-item">Please enter your new password</p>
 
 <jsp:include page="error-list.jsp" />
 
@@ -21,3 +21,5 @@
 		</tr>
 	</table>
 </form>
+
+<jsp:include page="page-bottom.jsp" />

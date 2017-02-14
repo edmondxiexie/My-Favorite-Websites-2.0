@@ -1,4 +1,4 @@
-<jsp:include page="template.jsp" />
+<jsp:include page="page-content.jsp" />
 
 <p class="list-item">
 	Login or <a href="register.do">register</a> a new user.
@@ -25,3 +25,4 @@
 		</table>
 	</form>
 </p>
+<jsp:include page="page-bottom.jsp" />
