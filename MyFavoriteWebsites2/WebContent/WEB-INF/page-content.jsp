@@ -19,7 +19,7 @@ a:visited {
 }
 
 a:hover {
-	color: #ff0080;
+	color: #C2185B;
 }
 
 a:active {
@@ -40,7 +40,7 @@ a:active {
 }
 
 #header {
-	background-color: #333333;
+	background-color: #5D4037;
 	color: white;
 	text-align: left;
 	padding: 5px;
@@ -48,7 +48,7 @@ a:active {
 
 #navigator {
 	line-height: 30px;
-	background-color: #eeeeee;
+	background-color: #D7CCC8;
 	height: 100%;
 	width: 150px;
 	float: left;
@@ -62,7 +62,7 @@ a:active {
 }
 
 #footer {
-	background-color: #333333;
+	background-color: #5D4037;
 	color: white;
 	clear: both;
 	text-align: center;
@@ -74,7 +74,7 @@ a:active {
 <body>
 	<div id="header">
 		<h1>
-			<a style="color: white; text-decoration: none" href="welcome.do"
+			<a style="font-size: 40; color: white; font-family: Helvetica; text-decoration: none" href="welcome.do"
 				title="favorites.com">Favorite Websites</a>
 		</h1>
 	</div>

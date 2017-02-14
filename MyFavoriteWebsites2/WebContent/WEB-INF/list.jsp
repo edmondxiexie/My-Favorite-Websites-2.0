@@ -5,7 +5,7 @@
 <div style="font-size: 20px" class="menu-head">
 	<c:choose>
 		<c:when test="${listUser.id == -1}">
-All Users:
+All Users' Favorite Websites:
 </c:when>
 		<c:when test="${listUser.email == null}">
 User Not Found
@@ -28,7 +28,7 @@ No favorite items.
 			<c:set var="cnt" value="${cnt + 1}" />
 			<c:choose>
 				<c:when test="${cnt%2==0}">
-					<tr bgcolor="#e6e6e6">
+					<tr bgcolor="#e4e4e4">
 				</c:when>
 				<c:otherwise>
 					<tr>
